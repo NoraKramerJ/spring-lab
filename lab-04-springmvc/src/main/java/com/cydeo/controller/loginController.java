@@ -11,7 +11,7 @@ public class loginController {
 
     @RequestMapping("/login/{email}/{phoneNumber}")
 
-    public String login(@PathVariable String email, @PathVariable String phoneNumber, Model model){
+    public String login(@PathVariable String email, @PathVariable int phoneNumber, Model model){
 
 
         model.addAttribute("email", email);
