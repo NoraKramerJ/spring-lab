@@ -1,7 +1,6 @@
 package com.cydeo.lab08rest.service.impl;
 
 import com.cydeo.lab08rest.dto.PaymentDTO;
-import com.cydeo.lab08rest.entity.Payment;
 import com.cydeo.lab08rest.mapper.MapperUtil;
 import com.cydeo.lab08rest.repository.PaymentRepository;
 import com.cydeo.lab08rest.service.PaymentService;

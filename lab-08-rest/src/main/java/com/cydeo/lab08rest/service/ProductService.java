@@ -1,13 +1,11 @@
 package com.cydeo.lab08rest.service;
 
 import com.cydeo.lab08rest.dto.ProductDTO;
-import com.cydeo.lab08rest.dto.ProductRequest;
 
 import java.math.BigDecimal;
 import java.util.List;
 
 public interface ProductService {
-
 
     List<ProductDTO> retrieveListProduct();
 
@@ -15,8 +13,7 @@ public interface ProductService {
 
     ProductDTO createProduct(ProductDTO productDTO);
 
-
-   List<ProductDTO> retrieveProductByCategoryAndPrice(List<Long> categoryList, BigDecimal price);
+    List<ProductDTO> retrieveProductByCategoryAndPrice(List<Long> categoryList, BigDecimal price);
 
     ProductDTO retrieveByName(String name);
 
@@ -24,7 +21,7 @@ public interface ProductService {
 
     Integer countProductByPrice(BigDecimal price);
 
-   List<ProductDTO> retrieveProductByPriceAndQuantity(BigDecimal price, Integer quantity);
+    List<ProductDTO>  retrieveProductByPriceAndQuantity(BigDecimal price, Integer quantity);
 
-    List<ProductDTO> retrieveByCategory(Long id);
+    List<ProductDTO> retrieveByCategory(Long categoryId);
 }
